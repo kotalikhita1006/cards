@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    #card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+        img{
+            height: 150px;
+            align-self: center;
+            background: contain;
+            padding-left: 40px ;
+            }
+        #title{
+            font-size: 20px;
+            color: gray;
+            }
+        #price{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            #number{
+                font-size: 18px;
+                font-weight: bold;
+                padding-right: 15px;
+                }
+            #text{
+                font-size: 15px;
+                color: gray;
+                padding: 0px;
+                } 
+            }
+            #delivery{
+                font-size: 15px;
+                color: black;
+                padding: 10px;
+            }
+            #rating{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:end;
+                #num{
+                    background-color: green;
+                    color: white;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+                #review{
+                    font-size: 15px;
+                    color: gray;
+                    padding: 10px 20px;
+                }
+            }
+        }
+}
